@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.vov4ik.moneycalculator.FirstStartAppActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Cash "
+            android:textColor="@color/textColorAddMoney"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/startCashBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="80dp"
+            android:height="30dp"
+            android:textColor="@color/textColorAddMoney"
+            android:inputType="numberDecimal"
+            android:textAlignment="viewStart"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Private "
+            android:textColor="@color/textColorAddMoney"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/startPrivatBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="80dp"
+            android:height="30dp"
+            android:textColor="@color/textColorAddMoney"
+            android:inputType="numberDecimal"
+            android:textAlignment="viewStart"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Raiffeisen viza "
+            android:textColor="@color/textColorAddMoney"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/startRVizaBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="80dp"
+            android:height="30dp"
+            android:textColor="@color/textColorAddMoney"
+            android:inputType="numberDecimal"
+            android:textAlignment="viewStart"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Raiffeisen master "
+            android:textColor="@color/textColorAddMoney"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/startRMasterBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="80dp"
+            android:height="30dp"
+            android:textColor="@color/textColorAddMoney"
+            android:inputType="text"
+            android:textAlignment="viewStart"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/confirmFirstStartButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="80dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/textColorAddMoney"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@color/confirmButtonColor"
+            android:text="Confirm"/>
+    </RelativeLayout>
+</LinearLayout>

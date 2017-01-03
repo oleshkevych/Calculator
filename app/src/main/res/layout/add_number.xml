@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.vov4ik.moneycalculator.fragments.AddMoneyFragment">
+
+    <LinearLayout
+        android:id="@+id/add_number_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/addMoneyFragmentBackground"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textColor="@color/headText"
+            android:textStyle="bold"
+            android:text="Spend money"
+            android:textAlignment="center"
+            android:textSize="25sp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+        <EditText
+            android:id="@+id/payedFor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:width="300dp"
+            android:height="40dp"
+            android:inputType="text"
+            android:layout_centerHorizontal="true"
+            android:background="@color/textColorAddMoney"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+
+            <EditText
+                android:id="@+id/numberOfMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:width="80dp"
+                android:height="30dp"
+                android:textColor="@color/textColorAddMoney"
+                android:inputType="numberDecimal"
+                android:textAlignment="viewStart"
+                android:layout_alignParentStart="true"
+                android:textSize="20sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_alignParentEnd="true"
+                android:maxWidth="100dp"
+                android:minWidth="100dp"
+                android:maxHeight="30dp"
+                android:background="@color/spinnerColor"
+                android:spinnerMode="dropdown"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorAddMoney"
+                android:text="Payed by:"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerPayFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_alignParentEnd="true"
+                android:maxWidth="100dp"
+                android:maxHeight="30dp"
+                android:background="@color/spinnerColor"
+                android:spinnerMode="dropdown"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sendToLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorAddMoney"
+                android:text="Send to:"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerSendTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_alignParentEnd="true"
+                android:maxWidth="100dp"
+                android:maxHeight="30dp"
+                android:background="@color/spinnerColor"
+                android:spinnerMode="dropdown"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorAddMoney"
+                android:text="Spent for month"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/spentForThisMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorAddMoney"
+                android:text="800"
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="80dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/textColorAddMoney"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@color/confirmButtonColor"
+            android:text="Confirm"/>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>
